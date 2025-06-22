@@ -26,8 +26,19 @@ def run ():
         data['email'], 
         data['confirm_email'], 
         decrypt(data['password']),
-        decrypt(data['confirm_password']))
+        decrypt(data['confirm_password']),
+        data['phone_number'],
+        data['birth_place'],
+        data['wa_number'],
+        data['weight'],
+        data['height'])
     register_page.click_gender()
+    register_page.select_religion(data['religion'])
+    register_page.set_date_of_birth(data['dob'])
+    register_page.select_status(data['status'])
+    register_page.select_is_worked_here()
+    register_page.resume_upload(data['resume_path'])
+    register_page.click_next_button()
     time.sleep(3)
 
     driver.quit()

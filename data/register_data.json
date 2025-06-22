@@ -3,7 +3,16 @@
     "id_number": 1235789019283751,
     "email" : "dummy-email@email.com",
     "confirm_email" : "dummy-email@email.com",
-    "password" : "gAAAAABoV6LonEYPPkNW9NtZYS7n4ZWeSag3D0VI8uolSUDkWVuZKordfjGsictqlr9bin48F2qOFcf6zGS32ty4BM4EG4JPQg==",
-    "confirm_password": "gAAAAABoV6LonEYPPkNW9NtZYS7n4ZWeSag3D0VI8uolSUDkWVuZKordfjGsictqlr9bin48F2qOFcf6zGS32ty4BM4EG4JPQg==",
-    "photo_path" : "assets/rose.jpg"
+    "password" : "gAAAAABoV99ftw7E4kYI-zpbDa9NW7fbgGLQqpfUmYqbGEBAbYG0ecKaljMNiIM_ZU9DMWt5LE1rgEWQXD_-xIHr1Gl1xcvXPw==",
+    "confirm_password": "gAAAAABoV99ftw7E4kYI-zpbDa9NW7fbgGLQqpfUmYqbGEBAbYG0ecKaljMNiIM_ZU9DMWt5LE1rgEWQXD_-xIHr1Gl1xcvXPw==",
+    "photo_path" : "assets/rose.jpg",
+    "religion" : "Islam",
+    "phone_number" : "0811111111",
+    "birth_place" : "Jawa Tengah",
+    "dob" : "2000-08-22",
+    "wa_number" : "0811111111",
+    "status" : "Belum Menikah",
+    "weight" : 78,
+    "height" : 80,
+    "resume_path" : "assets/cv.pdf"
 }
