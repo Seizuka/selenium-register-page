@@ -1,4 +1,9 @@
 {
     "full_name": "test nama",
-    "id_number": 1235789019283751
+    "id_number": 1235789019283751,
+    "email" : "dummy-email@email.com",
+    "confirm_email" : "dummy-email@email.com",
+    "password" : "gAAAAABoV6LonEYPPkNW9NtZYS7n4ZWeSag3D0VI8uolSUDkWVuZKordfjGsictqlr9bin48F2qOFcf6zGS32ty4BM4EG4JPQg==",
+    "confirm_password": "gAAAAABoV6LonEYPPkNW9NtZYS7n4ZWeSag3D0VI8uolSUDkWVuZKordfjGsictqlr9bin48F2qOFcf6zGS32ty4BM4EG4JPQg==",
+    "photo_path" : "assets/rose.jpg"
 }
