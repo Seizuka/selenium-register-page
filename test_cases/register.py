@@ -56,5 +56,4 @@ def run ():
         data['home_address']
         )
     time.sleep(5)
-
     driver.quit()

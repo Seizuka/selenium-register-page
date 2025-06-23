@@ -35,7 +35,7 @@ class RegisterPage:
         self.select_village = (By.ID, "kelurahan")
         self.select_home_status = (By.ID, "home_status")
         self.home_address = (By.ID, "home_address")
-    
+
     def fill_profile(self, full_name, id_number, email, confirm_email, password, confirm_password, phone_number, birth_place, wa_number, weight, height):
         self.driver.find_element(*self.full_name).send_keys(full_name)
         self.driver.find_element(*self.id_number).send_keys(id_number)
@@ -95,7 +95,6 @@ class RegisterPage:
         select_status = Select(self.driver.find_element(*self.status))
         select_status.select_by_visible_text(status)
 
-    #to select radio button for work here or not
     def select_is_worked_here(self):
         select_worked = WebDriverWait(self.driver, 7).until(
             EC.presence_of_element_located(self.is_worked_here)
@@ -106,7 +105,6 @@ class RegisterPage:
         # Klik pakai JavaScript (menghindari intercept)
         self.driver.execute_script("arguments[0].click();", select_worked)
 
-    #to upload the cv
     def resume_upload(self, file_path):
         abs_path = os.path.abspath(file_path)
         input_cv = WebDriverWait(self.driver, 5).until(
@@ -114,7 +112,6 @@ class RegisterPage:
         )
         input_cv.send_keys(abs_path)
     
-    #to click the next button
     def click_next_button(self):
         next_btn = WebDriverWait(self.driver, 10).until(
         EC.element_to_be_clickable(self.next_button)
@@ -187,5 +184,3 @@ class RegisterPage:
     def fill_address(self, postal_code, home_address):
         self.driver.find_element(*self.postal_code).send_keys(postal_code)
         self.driver.find_element(*self.home_address).send_keys(home_address)
-
-
