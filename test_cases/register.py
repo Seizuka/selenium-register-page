@@ -6,7 +6,7 @@ from utils.crypto_utils import decrypt
 import time
 import json
 
-
+#test-cases for profile page
 def run ():
     with open('data/register_data.json', 'r') as f:
         data = json.load(f)
@@ -20,7 +20,7 @@ def run ():
     register_page = RegisterPage(driver)
     register_page.click_register_button()
     register_page.photo_upload(data['photo_path'])
-    register_page.fill_form(
+    register_page.fill_profile(
         data['full_name'], 
         data['id_number'], 
         data['email'], 
@@ -31,7 +31,8 @@ def run ():
         data['birth_place'],
         data['wa_number'],
         data['weight'],
-        data['height'])
+        data['height']
+        )
     register_page.click_gender()
     register_page.select_religion(data['religion'])
     register_page.set_date_of_birth(data['dob'])
@@ -39,6 +40,21 @@ def run ():
     register_page.select_is_worked_here()
     register_page.resume_upload(data['resume_path'])
     register_page.click_next_button()
-    time.sleep(3)
+    #verify by using text
+    expected_text = "Alamat"
+    actual_text = register_page.get_verify_address()
+    assert expected_text in actual_text, f"Text Doesn't Right. Found: '{actual_text}'"
+
+    #test-cases for address page
+    register_page.get_select_province(data['select_province'])
+    register_page.get_select_city(data['select_city'])
+    register_page.get_select_subdistrict(data['select_subdistrict'])
+    register_page.get_select_village(data['select_village'])
+    register_page.get_select_home_status(data['select_home_status'])
+    register_page.fill_address(
+        data['postal_code'],
+        data['home_address']
+        )
+    time.sleep(5)
 
     driver.quit()

@@ -14,5 +14,12 @@
     "status" : "Belum Menikah",
     "weight" : 78,
     "height" : 80,
-    "resume_path" : "assets/cv.pdf"
+    "resume_path" : "assets/cv.pdf",
+    "postal_code" : 11475,
+    "select_province" : "Jawa Tengah",
+    "select_city" : "Kota Semarang",
+    "select_subdistrict" : "TEMBALANG",
+    "select_village" : "TEMBALANG",
+    "select_home_status" : "RUMAH ORANGTUA",
+    "home_address" : "Tembalang Tengah"
 }
