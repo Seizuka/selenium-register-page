@@ -55,5 +55,6 @@ def run ():
         data['postal_code'],
         data['home_address']
         )
+    register_page.click_next_button_2()
     time.sleep(5)
     driver.quit()

@@ -35,6 +35,7 @@ class RegisterPage:
         self.select_village = (By.ID, "kelurahan")
         self.select_home_status = (By.ID, "home_status")
         self.home_address = (By.ID, "home_address")
+        self.next_button_2 = (By.XPATH, "(//button[@name='next'][normalize-space()='Selanjutnya'])[2]")
 
     def fill_profile(self, full_name, id_number, email, confirm_email, password, confirm_password, phone_number, birth_place, wa_number, weight, height):
         self.driver.find_element(*self.full_name).send_keys(full_name)
@@ -184,3 +185,6 @@ class RegisterPage:
     def fill_address(self, postal_code, home_address):
         self.driver.find_element(*self.postal_code).send_keys(postal_code)
         self.driver.find_element(*self.home_address).send_keys(home_address)
+
+    def click_next_button_2(self):
+        self.driver.find_element(*self.next_button_2).click()
