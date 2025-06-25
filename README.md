@@ -12,20 +12,11 @@ selenium-register-page/
 ├── test_cases/
 │   └── register.py              # Main test case
 ├── data/
-<<<<<<< HEAD
 │ └── register_data.json # Test data input
 ├── encrypt_password.py # Script to encrypt plaintext password
 ├── main.py # Entry point to run the test
 └── README.md # Project overview
 
-=======
-│   └── register_data.json       # Test data input
-├── utils/
-│   └── crypto_utils.py          # Utility for password encryption/decryption
-├── main.py                      # Entry point to run the test
-├── requirements.txt             # Python dependencies
-└── README.md
->>>>>>> c1a87d6 (another update in project structure readme)
 
 
 ## ⚙️ Prerequisites
