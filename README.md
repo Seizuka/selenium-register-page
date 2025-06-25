@@ -5,7 +5,7 @@ Automated end-to-end testing of the candidate registration process at [alfakarir
 ---
 
 ## 📂 Project Structure
-
+<pre>
 selenium-register-page/
 ├── pages/
 │   └── register_page.py # Page Object class for the registration form
@@ -16,7 +16,7 @@ selenium-register-page/
 ├── encrypt_password.py # Script to encrypt plaintext password
 ├── main.py # Entry point to run the test
 └── README.md # Project overview
-
+</pre>
 
 
 ## ⚙️ Prerequisites
