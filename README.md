@@ -28,11 +28,14 @@ selenium-register-page/
 
 ```bash
 
+Install cryptography
+pip install cryptography
 
 pip install -r requirements.txt
 
 selenium
 cryptography
+
 
 
 🧪 Test Data
