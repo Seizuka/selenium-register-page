@@ -5,35 +5,20 @@ Automated end-to-end testing of the candidate registration process at [alfakarir
 ---
 
 ## 📂 Project Structure
-<<<<<<< HEAD
 
 selenium-register-page/
 ├── pages/
-│   └── register_page.py         # Page Object class for the registration form
+│   └── register_page.py # Page Object class for the registration form
 ├── test_cases/
-│   └── register.py              # Main test case
-=======
-selenium-register-page/
-├── pages/
-│ └── register_page.py # Page Object class for the registration form
-├── test_cases/
-│ └── register.py # Main test case
->>>>>>> 040f6d9841da956c491c812b5881818a31b3506f
+│   └── register.py # Main test case
 ├── data/
 │ └── register_data.json # Test data input
 ├── encrypt_password.py # Script to encrypt plaintext password
 ├── main.py # Entry point to run the test
-<<<<<<< HEAD
 └── README.md # Project overview
 
 
 
-=======
-├── requirements.txt # Python dependencies
-└── README.md # Project overview
-
-
->>>>>>> 040f6d9841da956c491c812b5881818a31b3506f
 ## ⚙️ Prerequisites
 
 - Python 3.7 or higher
