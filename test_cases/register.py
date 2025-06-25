@@ -16,7 +16,7 @@ def run ():
     driver.maximize_window()
 
     driver.get("https://alfakarir.alfamart.co.id/")
-    #register = driver.find_element(By.XPATH, "//a[normalize-space()='Daftar']")
+
     register_page = RegisterPage(driver)
     register_page.click_register_button()
     register_page.photo_upload(data['photo_path'])
@@ -40,6 +40,7 @@ def run ():
     register_page.select_is_worked_here()
     register_page.resume_upload(data['resume_path'])
     register_page.click_next_button()
+    
     #verify by using text
     expected_text = "Alamat"
     actual_text = register_page.get_verify_address()
@@ -56,5 +57,35 @@ def run ():
         data['home_address']
         )
     register_page.click_next_button_2()
+
+    #test-cases for education page
+    register_page.select_education(data['education'])
+    register_page.select_university(data['university'])
+    register_page.select_major(data['major'])
+    register_page.set_graduate_year(data['graduate_year'])
+    register_page.fill_education(
+        data['gpa']
+    )
+    register_page.click_next_button_3()
+
+    #test-cases for job page
+    register_page.fill_company(
+        data['company_name'],
+        data['position'],
+        data['reason_of_leaving']
+    )
+    register_page.set_start_date(data['start_date'])
+    register_page.set_end_date(data['end_date'])
+    register_page.click_next_button_4()
+
+    #test-cases for organization page
+    register_page.fill_organization(
+        data['organization_name'],
+        data['org_position']
+    )
+    register_page.set_org_start_date(data['org_start_date'])
+    register_page.set_org_end_date(data['org_end_date'])
+    register_page.click_tos()
+
     time.sleep(5)
     driver.quit()
