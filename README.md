@@ -8,14 +8,17 @@ Automated end-to-end testing of the candidate registration process at [alfakarir
 <pre>
 selenium-register-page/
 ├── pages/
-│   └── register_page.py # Page Object class for the registration form
+│   └── register_page.py       # Page Object class for the registration form
 ├── test_cases/
-│   └── register.py # Main test case
+│   └── register.py            # Main test case
 ├── data/
-│ └── register_data.json # Test data input
-├── encrypt_password.py # Script to encrypt plaintext password
-├── main.py # Entry point to run the test
-└── README.md # Project overview
+│   └── register_data.json     # Test data input
+├── utils/
+│   └── crypto_utils.py        # Utility for password encryption/decryption
+├── generate_key.py            # Script to generate a new Fernet key
+├── encrypt_password.py        # Script to encrypt plaintext password
+├── main.py                    # Entry point to run the test
+└── README.md                  # Project overview
 </pre>
 
 
