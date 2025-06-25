@@ -21,5 +21,19 @@
     "select_subdistrict" : "TEMBALANG",
     "select_village" : "TEMBALANG",
     "select_home_status" : "RUMAH ORANGTUA",
-    "home_address" : "Tembalang Tengah"
+    "home_address" : "Tembalang Tengah",
+    "education" : "S1 (STRATA 1)",
+    "university" : "UNIVERSITAS INDONESIA",
+    "major" : "TEKNIK INFORMATIKA",
+    "graduate_year" : 2021,
+    "gpa" : "3.90",
+    "company_name" : "PT Teknologi Maju",
+    "position" : "Staff",
+    "start_date" : 2021,
+    "end_date" : 2025,
+    "reason_of_leaving" : "Looking for a new opportunity",
+    "organization_name" : "BEM",
+    "org_position" : "Head",
+    "org_start_date" : 2019,
+    "org_end_date" : 2020
 }
